@@ -7,9 +7,8 @@
 * ██      ██  ██████   ██████  ██   ████ ██      ███████ ██ ██      
 *
 * Website: https://www.moonflip.net/
-* Twitter: https://twitter.com/moonfliptoken
-* Discord: https://discord.gg/moonfliptoken
-* Reddit: https://www.reddit.com/r/moonfliptoken/
+* Twitter: https://twitter.com/moonflipcrypto
+* Discord: https://discord.gg/etyvUAMat7
 * Telegram: https://t.me/moonfliptoken
 */
 
@@ -87,7 +86,7 @@ contract Token is Context, IERC20, ERC20, Ownable {
         emit Transfer(address(0), _msgSender(), _tTotal);
     }
 
-    /** Black list for bots */
+    /** Blacklist for bots */
     modifier isBlackedListed(address from, address to) {
         require(
             _isBlacklisted[from] == false && _isBlacklisted[to] == false,

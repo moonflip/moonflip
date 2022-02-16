@@ -8,9 +8,8 @@
 * ██      ██  ██████   ██████  ██   ████ ██      ███████ ██ ██      
 *
 * Website: https://www.moonflip.net/
-* Twitter: https://twitter.com/moonfliptoken
-* Discord: https://discord.gg/moonfliptoken
-* Reddit: https://www.reddit.com/r/moonfliptoken/
+* Twitter: https://twitter.com/moonflipcrypto
+* Discord: https://discord.gg/etyvUAMat7
 * Telegram: https://t.me/moonfliptoken
 */
 
@@ -20,25 +19,35 @@ pragma solidity >=0.6.12;
 contract RewardSheet {
     function getAwardMultiplier(uint256 rand) external pure returns(uint256) {
         if (rand <= 500000) return 0;
-        else if (rand <= 765000) return 100000;
-        else if (rand <= 911500) return 200000;
-        else if (rand <= 956500) return 300000;
-        else if (rand <= 984000) return 500000;
-        else if (rand <= 996500) return 1000000;
-        else if (rand <= 999000) return 2000000;
-        else if (rand <= 1000000) return 4000000;
+        else if (rand <= 536700) return 100000;
+        else if (rand <= 829700) return 200000;
+        else if (rand <= 919700) return 300000;
+        else if (rand <= 974700) return 500000;
+        else if (rand <= 994700) return 1000000;
+        else if (rand <= 997700) return 2000000;
+        else if (rand <= 999700) return 4000000;
+        else if (rand <= 999800) return 8000000;
+        else if (rand <= 999880) return 20000000;
+        else if (rand <= 999940) return 30000000;
+        else if (rand <= 999980) return 50000000;
+        else if (rand <= 1000000) return 100000000;
         else return 0;
     }
 
     function getPoolGrowthAwardMultiplier(uint256 rand) external pure returns(uint256) {
-        if (rand <= 500000) return 0;
-        else if (rand <= 780000) return 100000;
-        else if (rand <= 921500) return 200000;
-        else if (rand <= 961500) return 300000;
-        else if (rand <= 986500) return 500000;
-        else if (rand <= 996500) return 1000000;
-        else if (rand <= 999000) return 2000000;
-        else if (rand <= 1000000) return 4000000;
+        if (rand <= 536700) return 0;
+        else if (rand <= 571700) return 100000;
+        else if (rand <= 854700) return 200000;
+        else if (rand <= 934700) return 300000;
+        else if (rand <= 974700) return 500000;
+        else if (rand <= 994700) return 1000000;
+        else if (rand <= 997700) return 2000000;
+        else if (rand <= 999700) return 4000000;
+        else if (rand <= 999800) return 8000000;
+        else if (rand <= 999880) return 20000000;
+        else if (rand <= 999940) return 30000000;
+        else if (rand <= 999980) return 50000000;
+        else if (rand <= 1000000) return 100000000;
         else return 0;
     }
 }

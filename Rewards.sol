@@ -8,9 +8,8 @@
 * ██      ██  ██████   ██████  ██   ████ ██      ███████ ██ ██      
 *
 * Website: https://www.moonflip.net/
-* Twitter: https://twitter.com/moonfliptoken
-* Discord: https://discord.gg/moonfliptoken
-* Reddit: https://www.reddit.com/r/moonfliptoken/
+* Twitter: https://twitter.com/moonflipcrypto
+* Discord: https://discord.gg/etyvUAMat7
 * Telegram: https://t.me/moonfliptoken
 */
 
@@ -76,7 +75,7 @@ contract Rewards is Context, AccessControl {
     }
 
     function getAwardMultiplier(uint256 rand, uint256 percent) external view returns(uint256) {
-        if (percent <= 20) {
+        if (percent <= _poolGrowthPercent) {
             return rewardSheet.getPoolGrowthAwardMultiplier(rand);
         }
         
